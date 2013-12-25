@@ -1,0 +1,13 @@
+1 windows SVN 搭建 : http://www.cnblogs.com/xiaobaihome/archive/2012/03/20/2407610.html;http://www.cnblogs.com/cloud2rain/archive/2013/04/11/3015080.html
+sc create svnserve binPath= "C:\Program Files (x86)\VisualSVN Server\bin\svnserve.exe --service -r F:\Repositories" displayname= "Subversion" depend= Tcpip start= auto
+
+复习计划：
+
+1 Object C 12.15前看完
+2 设计模式 12.15前看完
+
+3 12.16-12.30 IOS环境搭建 git  基本的demo学习
+
+4 12.16-12.15 HTML5 JS的 学习环境搭建
+
+5 熟悉C/C++的编译开发环境
