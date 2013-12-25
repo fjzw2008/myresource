@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/empty_data"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:gravity="center"
+  android:background="@color/bg_color_white" >
+  <ProgressBar
+    android:id="@+id/emptyProgress"
+    android:layout_width="25dip"
+    android:layout_height="25dip"
+    android:layout_marginRight="6dip" 
+    android:indeterminateDrawable="@drawable/bg_progress_loading"    
+    />
+    
+  <LinearLayout
+    android:id="@+id/empty_show"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"   
+    android:visibility="gone"
+    >
+    <ImageView
+        android:id="@+id/empty_img_show"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+        android:background="@drawable/ic_nodata"
+    />
+    <TextView
+	    android:id="@+id/emptyText"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="10dp"
+	    android:textSize="15sp"
+	    android:gravity="center"
+	    android:textColor="@color/font_text_grey"	
+	    android:paddingLeft="65dp"
+	    android:paddingRight="65dp"  
+	    android:drawableLeft="@drawable/ic_serial"	 
+	    android:text="暂无数据，添加您所需要的数据吧"
+   /> 
+  
+  </LinearLayout>  
+ 
+</LinearLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+  	xmlns:android="http://schemas.android.com/apk/res/android"
+  	android:layout_width="fill_parent"
+  	android:layout_height="fill_parent"
+  	android:orientation="vertical"
+  	android:background="@color/font_text_white"
+	>
+<include 
+	    android:id="@+id/common_titlebar"
+	    layout="@layout/common_titlebar"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+    />
+	
+  <ScrollView 
+  	android:layout_width="fill_parent"
+  	android:layout_height="fill_parent"
+  	android:background="@drawable/bitmap_setting_bg"
+  	>
+  	<LinearLayout
+  	    android:layout_width="fill_parent"
+        android:layout_height="wrap_content"  	
+  	    android:orientation="vertical"
+  	    android:padding="20dp"
+  	>
+  	     <TextView
+  	        android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+  	        android:text="@string/login_username"
+  	        android:textAppearance="@style/TextViewStyleUserName"  	        
+  	     />
+  	     <EditText
+  	        android:id="@+id/user_account"
+  	        android:layout_width="fill_parent"
+            android:layout_height="42dp"
+            android:hint="@string/login_input_hint"        
+  	        android:background="@drawable/bg_edt_input"
+  	        android:layout_marginTop="5dp"
+  	        android:paddingLeft="5dp"
+  	        android:singleLine="true"
+  	        android:textAppearance="@style/TextViewStyleUserName"            
+  	     />
+  	    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login_password"
+            android:textAppearance="@style/TextViewStyleUserName"         
+            android:layout_marginTop="5dp"
+         />
+         <EditText
+            android:id="@+id/user_password"
+            android:layout_width="fill_parent"
+            android:layout_height="42dp"       
+            android:background="@drawable/bg_edt_input"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="5dp"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textAppearance="@style/TextViewStyleUserName"          
+         />
+         <Button
+            android:id="@+id/user_login"
+            android:layout_width="fill_parent"
+            android:layout_height="42dp"
+            android:background="@drawable/selector_deep_blue_listrow"
+            android:layout_marginTop="30dp"
+            android:text="@string/login_title"
+            android:textColor="@color/font_text_white"
+            android:textSize="17sp"
+         />
+         
+         <Button
+            android:id="@+id/user_activate"
+            android:layout_width="fill_parent"
+            android:layout_height="42dp"
+            android:background="@drawable/selector_light_blue_listrow"
+            android:layout_marginTop="10dp"
+            android:text="@string/login_mobilenum"
+            android:textColor="@color/font_text_white"
+            android:textSize="17sp"
+         />   
+  	</LinearLayout>
+  </ScrollView>
+
+</LinearLayout>

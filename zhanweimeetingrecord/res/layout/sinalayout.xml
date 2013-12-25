@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_color_white"
+    android:padding="10dip">
+ 
+    <TextView
+        android:id="@+id/TextView1"
+        android:textColor="@color/font_text_black"       
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="新浪微博"/>
+ 
+    <EditText
+        android:id="@+id/txt_siancontent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TextView1"/>
+
+    
+    <Button
+        android:id="@+id/btn_sinasend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_siancontent"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="10dip"
+        android:text="发送" />
+ 
+    <Button
+         android:id="@+id/btn_sinasback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/btn_sinasend"
+        android:layout_alignTop="@id/btn_sinasend"
+        android:text="返回" />
+
+</RelativeLayout>
